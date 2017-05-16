@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: rgba(248, 247, 242, 0.5);
+}
+
+
+@font-face {
+  font-family: "RockSalt";
+  src: url(/assets/font/RockSalt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Thin";
+  src: url(/assets/font/ufonts.com_gotham-thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url(/assets/font/ufonts.com_gotham-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url(/assets/font/ufonts.com_gotham-book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url(/assets/font/ufonts.com_gotham-bold.ttf) format("truetype");
+}
+ @font-face {
+        font-family:"HelveticaNeueBold";
+        src:  url(/assets/font/HelveticaNeueBold.ttf)  format("truetype");
+
+      }
+@font-face {
+      font-family: "HelveticaNeueLight";
+    src: url('/assets/font/HelveticaNeueLight.ttf')  format("truetype");
+
+      }
