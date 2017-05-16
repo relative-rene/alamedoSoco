@@ -9,7 +9,7 @@ import { Image } from 'app/_interfaces/images.model';
 export class CarouselComponent implements OnInit {
 images: Image[] = [
   new Image('BayGrits & Eggs', 'BayGrits & Eggs', './assets/baygritsEggs.jpg'),
-  new Image('Busser Area', 'Deep Scuba Busser', './assets/assetsbusArea'),
+  new Image('Busser Area', 'Deep Scuba Busser', './assets/busArea'),
   new Image('Spammasubi', 'Wrapped Spam', './assets/spammasubi.jpg'),
   new Image('Fried Rolls', 'Deepfried rolls w/ dipping sauce', './assets/friedrolls.jpg'),
   new Image('Waffle Art', 'Upclose Waffle', './assets/prowaffle.jpg'),
