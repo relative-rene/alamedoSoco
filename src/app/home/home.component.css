@@ -8,3 +8,14 @@ h1#title {
   max-height: 3em;
   font-family: "RockSalt", cursive;
 }
+
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}

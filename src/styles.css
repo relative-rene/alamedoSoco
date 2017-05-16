@@ -39,3 +39,6 @@ body {
     src: url('/assets/font/HelveticaNeueLight.ttf')  format("truetype");
 
       }
+.textcenter {
+  text-align: center;
+}
