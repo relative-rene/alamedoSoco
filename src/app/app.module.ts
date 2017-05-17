@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './home/menu/menu.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
+import { SmallDishesComponent } from './small-dishes/small-dishes.component';
+import { BrunchComponent } from './brunch/brunch.component';
+import { EntreesComponent } from './entrees/entrees.component';
+import { SidesComponent } from './sides/sides.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { CarouselComponent } from './home/carousel/carousel.component';
     FooterComponent,
     HomeComponent,
     MenuComponent,
-    CarouselComponent
+    CarouselComponent,
+    SmallDishesComponent,
+    BrunchComponent,
+    EntreesComponent,
+    SidesComponent
   ],
   imports: [
     BrowserModule,
