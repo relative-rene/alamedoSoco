@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './home/menu/menu.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
-import { SmallDishesComponent } from './small-dishes/small-dishes.component';
-import { BrunchComponent } from './brunch/brunch.component';
-import { EntreesComponent } from './entrees/entrees.component';
-import { SidesComponent } from './sides/sides.component';
+import { SmallDishesComponent } from './home/menu/small-dishes/small-dishes.component';
+import { BrunchComponent } from './home/menu/brunch/brunch.component';
+import { EntreesComponent } from './home/menu/entrees/entrees.component';
+import { SidesComponent } from './home/menu/sides/sides.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     HomeComponent,
     MenuComponent,

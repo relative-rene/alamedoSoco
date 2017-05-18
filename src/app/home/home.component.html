@@ -1,22 +1,25 @@
+<div class="nav-container" [class.fixed]="!navIsFixed">
+  <nav role="navigation">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#" (click)="onSelect('recipe')"></a>
+        </li>
+        <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+      </ul>
+    </div>
+    </nav>
+</div>
+
 <header>
   <h1 id='title'> Neptune's
 </h1>
 </header>
-<!-- <app-carousel></app-carousel> -->
-<div class="row">
-  <div class="col-xs-12">
-    <app-header></app-header>
-  </div>
+<div class="wrapper">
+  <app-carousel></app-carousel>
 </div>
 <div class="row">
   <div class="col-xs-12">
     <app-menu></app-menu>
   </div>
 </div>
-<footer>
-  <app-footer></app-footer>
-</footer>
-
-
-
-<app-small-dishes></app-small-dishes>
