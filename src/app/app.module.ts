@@ -12,6 +12,7 @@ import { SmallDishesComponent } from './home/menu/small-dishes/small-dishes.comp
 import { BrunchComponent } from './home/menu/brunch/brunch.component';
 import { EntreesComponent } from './home/menu/entrees/entrees.component';
 import { SidesComponent } from './home/menu/sides/sides.component';
+import { SlideComponent } from './home/slide/slide.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SidesComponent } from './home/menu/sides/sides.component';
     SmallDishesComponent,
     BrunchComponent,
     EntreesComponent,
-    SidesComponent
+    SidesComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,

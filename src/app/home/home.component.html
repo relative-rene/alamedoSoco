@@ -1,3 +1,19 @@
+<div class="col-md-12">
+  <app-carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+    <app-slide *ngFor="#slidez of slides; #index=index" [active]="slidez.active">
+      <img [src]="slidez.image" style="margin:auto;">
+
+      <div class="carousel-caption">
+        <h3 style="background-color: transparent;color: white;">Slide {{index + 1}}</h3>
+        <p style="background-color: transparent;color: white;">{{slidez.text}}</p>
+      </div>
+    </app-slide>
+  </app-carousel>
+</div>
+<div class="col-md-12">
+  <button type="button" class="btn btn-info" (click)="removeLastSlide()">Remove Last Slide
+</button>
+</div>
 <div class="nav-container" [class.fixed]="!navIsFixed">
   <nav role="navigation">
     <div class="collapse navbar-collapse">
@@ -8,18 +24,6 @@
         <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
       </ul>
     </div>
-    </nav>
+  </nav>
 </div>
-
-<header>
-  <h1 id='title'> Neptune's
-</h1>
-</header>
-<div class="wrapper">
-  <app-carousel></app-carousel>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <app-menu></app-menu>
-  </div>
-</div>
+<app-menu></app-menu>
