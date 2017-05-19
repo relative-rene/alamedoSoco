@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -13,6 +14,9 @@ import { BrunchComponent } from './home/menu/brunch/brunch.component';
 import { EntreesComponent } from './home/menu/entrees/entrees.component';
 import { SidesComponent } from './home/menu/sides/sides.component';
 import { SlideComponent } from './home/slide/slide.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { InfoComponent } from './info/info.component';
+
 
 
 @NgModule({
@@ -26,7 +30,9 @@ import { SlideComponent } from './home/slide/slide.component';
     BrunchComponent,
     EntreesComponent,
     SidesComponent,
-    SlideComponent
+    SlideComponent,
+    NavbarComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
