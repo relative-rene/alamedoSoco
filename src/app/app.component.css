@@ -1,0 +1,29 @@
+
+body {
+  background-color: rgba(248, 247, 242, 0.5);
+}
+
+@font-face {
+  font-family: "RockSalt";
+  src: url('https://fonts.googleapis.com/css?family=Rock+Salt');
+}
+
+
+.textcenter {
+  text-align: center;
+}
+
+h1#title {
+  text-align: center;
+  max-height: 3em;
+  font-family: "RockSalt", cursive;
+}
+
+/*
+Future imports
+font-family: "Gotham Thin";
+font-family: "Gotham Light";
+font-family: "Gotham Book";
+font-family: "Gotham Bold";
+font-family:"HelveticaNeueBold";
+font-family: "HelveticaNeueLight";*/

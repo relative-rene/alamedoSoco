@@ -1,23 +1,9 @@
-
-h1#title {
-  text-align: center;
-  max-height: 3em;
-  font-family: "RockSalt", cursive;
+app-slide img {
+  height: 100%;
+  width: 100%;
 }
 
-
-
-.navbar .navbar-nav {
-    display: flex;
-    direction: column;
-    float: none;
+div.col-md-4.ends {
+  margin: 0;
+  padding: 0;
 }
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-.wrapper{
-   width: 60%;
-   margin: 60px auto;
- }

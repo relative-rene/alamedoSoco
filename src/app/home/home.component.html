@@ -1,21 +1,32 @@
-<div class="col-md-12">
-  <app-carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
-    <app-slide *ngFor="#slidez of slides; #index=index" [active]="slidez.active">
-      <img [src]="slidez.image" style="margin:auto;">
+<article class="carousel img-responsive">
+  <div class="row">
+    <div class="col-md-4 ends">
+      <app-carousel [interval]="NextPhotoInterval">
+        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+          <img [src]="slidez.image" style="height:500px">
+        </app-slide>
+      </app-carousel>
+    </div>
+    <div class="col-md-4">
+      <app-carousel [interval]="NextPhotoInterval">
+        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+          <img [src]="slidez.image" style="height:500px">
+        </app-slide>
+      </app-carousel>
+    </div>
+    <div class="col-md-4 ends">
+      <app-carousel [interval]="NextPhotoInterval">
+        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+          <img [src]="slidez.image" style="height:500px">
+        </app-slide>
+      </app-carousel>
+    </div>
+  </div>
+</article>
 
-      <div class="carousel-caption">
-        <h3 style="background-color: transparent;color: white;">Slide {{index + 1}}</h3>
-        <p style="background-color: transparent;color: white;">{{slidez.text}}</p>
-      </div>
-    </app-slide>
-  </app-carousel>
-</div>
-<div class="col-md-12">
-  <button type="button" class="btn btn-info" (click)="removeLastSlide()">Remove Last Slide
-</button>
-</div>
+
 <div class="nav-container" [class.fixed]="!navIsFixed">
-  <nav role="navigation">
+  <div role="navigation">
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -24,6 +35,6 @@
         <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
 </div>
 <app-menu></app-menu>
