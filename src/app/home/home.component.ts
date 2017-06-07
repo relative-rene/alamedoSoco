@@ -1,7 +1,7 @@
 import { Component, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
-import { CarouselComponent } from './carousel/carousel.component';
-import { SlideComponent } from './slide/slide.component';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { SlideComponent } from '../carousel/slide/slide.component';
 
 @Component({
   selector: 'app-home',

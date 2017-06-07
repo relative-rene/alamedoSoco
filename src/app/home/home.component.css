@@ -1,9 +1,9 @@
-app-slide img {
-  height: 100%;
-  width: 100%;
-}
 
-div.col-md-4.ends {
-  margin: 0;
-  padding: 0;
+app-slide img {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+div.col-md-3 {
+  margin: 0 auto;
 }

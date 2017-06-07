@@ -4,3 +4,31 @@ padding: 0;!
 border: 0;!
 margin: 0;
 }
+
+
+
+
+@font-face {
+  font-family: "RockSalt";
+  src: url('https://fonts.googleapis.com/css?family=Rock+Salt');
+}
+
+
+.textcenter {
+  text-align: center;
+}
+
+h1#title {
+  text-align: center;
+  max-height: 3em;
+  font-family: "RockSalt", cursive;
+}
+
+/*
+Future imports
+font-family: "Gotham Thin";
+font-family: "Gotham Light";
+font-family: "Gotham Book";
+font-family: "Gotham Bold";
+font-family:"HelveticaNeueBold";
+font-family: "HelveticaNeueLight";*/

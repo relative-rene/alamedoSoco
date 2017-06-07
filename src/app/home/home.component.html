@@ -1,28 +1,32 @@
-
-<article class="carousel img-responsive">
-  <div class="row">
-    <div class="col-md-4 ends">
-      <app-carousel [interval]="NextPhotoInterval">
-        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
-          <img [src]="slidez.image" style="height:500px">
-        </app-slide>
-      </app-carousel>
-    </div>
-    <div class="col-md-4">
-      <app-carousel [interval]="NextPhotoInterval">
-        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
-          <img [src]="slidez.image" style="height:500px">
-        </app-slide>
-      </app-carousel>
-    </div>
-    <div class="col-md-4 ends">
-      <app-carousel [interval]="NextPhotoInterval">
-        <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
-          <img [src]="slidez.image" style="height:500px">
-        </app-slide>
-      </app-carousel>
-    </div>
+<header>
+  <h1 id='title'> Neptune's</h1>
+</header>
+<div class="row">
+  <div class="col-md-3 pull-left">
+    <app-carousel [interval]="NextPhotoInterval">
+      <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+        <img [src]="slidez.image" class="end-L">
+      </app-slide>
+    </app-carousel>
   </div>
-</article>
+  <div class="col-md-6">
+    <app-carousel [interval]="NextPhotoInterval">
+      <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+        <img [src]="slidez.image">
+      </app-slide>
+    </app-carousel>
+  </div>
+  <div class="col-md-3 pull-right">
+    <app-carousel [interval]="NextPhotoInterval">
+      <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+        <img [src]="slidez.image" class="end-R">
+      </app-slide>
+    </app-carousel>
+  </div>
+</div>
+
+<br>
+
 <app-menu></app-menu>
 <app-info></app-info>
+<app-navbar></app-navbar>
