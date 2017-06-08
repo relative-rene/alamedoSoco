@@ -1,0 +1,8 @@
+section, p, h4 {
+  text-align: left;
+}
+
+h5.col-md-6 span {
+  font-weight: bolder;
+  text-align: center;
+}

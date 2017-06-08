@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
-
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MenuRoutingModule } from './home/menu/menu-routing.module';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -37,7 +37,8 @@ import { InfoComponent } from './info/info.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MenuRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
