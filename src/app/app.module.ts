@@ -8,12 +8,12 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './home/menu/menu.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './home/menu/carousel/carousel.component';
 import { SmallDishesComponent } from './home/menu/small-dishes/small-dishes.component';
 import { BrunchComponent } from './home/menu/brunch/brunch.component';
 import { EntreesComponent } from './home/menu/entrees/entrees.component';
 import { SidesComponent } from './home/menu/sides/sides.component';
-import { SlideComponent } from './carousel/slide/slide.component';
+import { SlideComponent } from './home/menu/carousel/slide/slide.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InfoComponent } from './info/info.component';
 

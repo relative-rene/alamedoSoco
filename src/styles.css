@@ -3,9 +3,8 @@ h3, p, ol, ul, li, a {!
 padding: 0;!
 border: 0;!
 margin: 0;
+font-family: "RockSalt";
 }
-
-
 
 
 @font-face {
@@ -20,9 +19,11 @@ margin: 0;
 
 h1#title {
   text-align: center;
-  max-height: 3em;
+  height: 1.6em;
   font-family: "RockSalt", cursive;
 }
+
+
 
 /*
 Future imports

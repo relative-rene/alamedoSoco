@@ -1,36 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-import { Drink } from 'app/_interfaces/drinks.model';
+import { Component, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
+import { CarouselComponent } from './carousel/carousel.component';
+import { SlideComponent } from './carousel/slide/slide.component';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
-drinks: Drink[] = [
-  new Drink('Drip Coffee', '3.50'),
-  new Drink('Cafe Au Lait', '4'),
-  new Drink('Cold Brew', '4'),
-  new Drink('Espresso', '', ['single 2', 'Double 2.50']),
-  new Drink('Macciato', '3.25'),
-  new Drink('Americano', '3.75'),
-  new Drink('Cappuccino', '3.75'),
-  new Drink('Latte', '4.25'),
-  new Drink('Mocha', '4.50'),
-  new Drink('Spaniard', '4.75'),
-  new Drink('Hot Chocolate', '4.75'),
-  new Drink('Milk', '3.50'),
-  new Drink('Chai Latte', '4.50'),
-  new Drink('Matcha Latte', '5'),
-  new Drink('Premium Loose Leaf Tea', '4.50'),
-  new Drink( 'Sweet Tea', ' 4'),
-  new Drink('Arnold Palmer', '4'),
-  new Drink('Soda', '3' , ['Coke', 'Ginger Ale', 'Root Beer', 'Black Cherry Coke']),
-
-];
-
-  constructor() { }
-
-  ngOnInit() {
+export class MenuComponent {
+  public navIsFixed = false;
+  // The time to show the next photo
+  private NextPhotoInterval = 2000;
+  // Looping or not
+  private noLoopSlides = true;
+  // Photos
+  private slides: Array<any> = [];
+  private addNewSlide() {
+    this.slides.push(
+      { image: './assets/spammasubi.jpg', text: 'Spammasubi' },
+      { image: './assets/friedrolls.jpg', text: 'Fried Rolls' },
+      { image: './assets/prowaffle.jpg', text: 'Waffle Art' },
+      { image: './assets/gLatte.jpg', text: 'Green Latte' },
+      { image: './assets/gritsEggs.jpg', text: 'Bay shrimp and grits' },
+      { image: './assets/waffleChix.jpg', text: 'Chicken and Waffles' },
+      { image: './assets/latteArt.jpg', text: 'Latte' }
+    );
   }
+  private removeLastSlide() {
+    this.slides.pop();
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    let number = this.document.body.scrollTop;
+    if (number > 100) {
+      this.navIsFixed = true;
+    } else if (this.navIsFixed && number < 10) {
+      this.navIsFixed = false;
+    }
+  }
+
+  constructor( @Inject(DOCUMENT) private document: Document) {
+    this.addNewSlide();
+  }
+
 }
