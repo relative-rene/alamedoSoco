@@ -11,7 +11,7 @@ import { SlideComponent } from './carousel/slide/slide.component';
 export class MenuComponent {
   public navIsFixed = false;
   // The time to show the next photo
-  private NextPhotoInterval = 2000;
+  private NextPhotoInterval = 10000;
   // Looping or not
   private noLoopSlides = true;
   // Photos
