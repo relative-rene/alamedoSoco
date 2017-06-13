@@ -1,3 +1,32 @@
-<p>
-  contact-us works!
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <app-carousel [interval]="NextPhotoInterval">
+      <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+        <img [src]="slidez.image" class="img-responsive" style="width:40em; height:30em;">
+      </app-slide>
+    </app-carousel>
+
+  </div>
+  <div class="col-md-6">
+    <form [formGroup]="messageForm" (ngSubmit)="logMessage()">
+      Inside the form.
+      <div>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" [formControl]="username">
+        <div [hidden]="username.valid || username.untouched">
+          <div>The following problems have been found with the username:</div>
+          <div [hidden]="!username.hasError('minlength')">Username can not be shorter than 5 characters.</div>
+          <div [hidden]="!username.hasError('required')">Username is required.</div>
+        </div>
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" [formControl]="password">
+        <div [hidden]="password.valid || password.untouched">
+          <div>The following problems have been found with the password:</div>
+          <div [hidden]="!password.hasError('required')">The password is required.</div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!messageForm.valid">Log In</button>
+    </form>
+  </div>
