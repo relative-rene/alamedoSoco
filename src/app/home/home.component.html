@@ -4,6 +4,14 @@
     <img [src]="jumbotronPath" class="img-responsive" style="max-width:99%;" alt="notTheOcean">
   </div>
 </div>
-<app-info></app-info>
-<app-menu></app-menu>
-<app-navbar></app-navbar>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <ul class="nav nav-tabs nav-justified">
+      <li><a routerLink="/menu">Menu</a></li>
+      <li><a (click)='googleLink($event)'>Directions</a></li>
+      <li><a routerLink="/footer">Info</a></li>
+      <li><a routerLink="/contact-us">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

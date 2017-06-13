@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule} from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MenuRoutingModule } from './home/menu/menu-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -14,8 +17,10 @@ import { BrunchComponent } from './home/menu/brunch/brunch.component';
 import { EntreesComponent } from './home/menu/entrees/entrees.component';
 import { SidesComponent } from './home/menu/sides/sides.component';
 import { SlideComponent } from './home/menu/carousel/slide/slide.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { InfoComponent } from './info/info.component';
+import { MapComponent } from './map/map.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 
 
@@ -31,14 +36,19 @@ import { InfoComponent } from './info/info.component';
     EntreesComponent,
     SidesComponent,
     SlideComponent,
-    NavbarComponent,
-    InfoComponent
+    InfoComponent,
+    MapComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MenuRoutingModule
+    MenuRoutingModule,
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyBWZSPWwSlUyymW8yy3zrrcemAUC6e2NrY"
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
