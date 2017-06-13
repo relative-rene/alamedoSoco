@@ -21,6 +21,8 @@ import { InfoComponent } from './info/info.component';
 import { MapComponent } from './map/map.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
+import { MessageService } from './contact-us/message.service';
+
 
 
 
@@ -51,7 +53,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       apiKey: 'AIzaSyBWZSPWwSlUyymW8yy3zrrcemAUC6e2NrY'
     })
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
