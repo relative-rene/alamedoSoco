@@ -2,13 +2,15 @@
   <div class="col-md-6">
     <app-carousel [interval]="NextPhotoInterval">
       <app-slide *ngFor="let slidez of slides; let index = index;" [active]="slidez.active">
+        <h2 style="text-align:center;">{{slidez.text}}</h2>
         <img [src]="slidez.image" class="img-responsive" style="width:40em; height:30em;">
       </app-slide>
     </app-carousel>
   </div>
   <div class="col-md-6">
     <ul class="nav nav-tabs nav-justified">
-      <li class=""><a routerLink='/small-dishes'>Small Dishes</a></li>
+      <br>
+      <li ><a routerLink='/small-dishes'>Small Dishes</a></li>
       <li role="presentation"><a routerLink='/brunch'>Brunch</a></li>
       <li role="presentation"><a routerLink='/entrees'>Entrees</a></li>
       <li role="presentation"><a routerLink='/sides'>Sides</a></li>

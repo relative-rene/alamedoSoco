@@ -6,6 +6,7 @@ import { MenuComponent } from './home/menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { InfoComponent } from './contact-us/info/info.component';
 
 const appRoutes: Routes = [
   { path: 'home', redirectTo: 'footer', pathMatch: 'full' },

@@ -17,7 +17,7 @@ import { BrunchComponent } from './home/menu/brunch/brunch.component';
 import { EntreesComponent } from './home/menu/entrees/entrees.component';
 import { SidesComponent } from './home/menu/sides/sides.component';
 import { SlideComponent } from './home/menu/carousel/slide/slide.component';
-import { InfoComponent } from './info/info.component';
+import { InfoComponent } from './contact-us/info/info.component';
 import { MapComponent } from './map/map.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
