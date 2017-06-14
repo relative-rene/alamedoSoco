@@ -1,7 +1,6 @@
-h3 {
-  font-family: 'RockSalt', fantasy;
+div.col-xs-12 {
+  font-family:'RockSalt', fantasy;
 }
-
 h3 span {
 font-size: 200%;
 font-family:monospace;
