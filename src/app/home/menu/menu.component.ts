@@ -11,11 +11,11 @@ import { SlideComponent } from './carousel/slide/slide.component';
 export class MenuComponent {
   public navIsFixed = false;
   // The time to show the next photo
-  private NextPhotoInterval = 10000;
+  public NextPhotoInterval = 10000;
   // Looping or not
-  private noLoopSlides = true;
+  public noLoopSlides = true;
   // Photos
-  private slides: Array<any> = [];
+  public slides: Array<any> = [];
   private addNewSlide() {
     this.slides.push(
       { image: './assets/spammasubi.jpg', text: 'Spammasubi' },
@@ -41,7 +41,7 @@ export class MenuComponent {
     }
   }
 
-  constructor( @Inject(DOCUMENT) private document: Document) {
+  constructor( @Inject(DOCUMENT) private document: any) {
     this.addNewSlide();
   }
 
