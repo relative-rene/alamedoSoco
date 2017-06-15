@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /404
+
 # dependencies
 /node_modules
 
@@ -32,6 +33,8 @@
 npm-debug.log
 testem.log
 /typings
+.env
+.eslintrc
 
 # e2e
 /e2e/*.js
